@@ -1,0 +1,232 @@
+body{
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+section{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.textbox {
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15), 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+    padding: 10px;
+    background: linear-gradient(45deg,  rgb(157, 157, 172),  rgb(111, 150, 207));
+    background-size: 400% 400%;
+    animation: animateBackground 10s ease infinite;
+}
+  
+.title {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: "Nunito", "sans-serif";
+}
+  
+.text {
+    color: white;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: "Nunito", "sans-serif";
+}
+  
+@keyframes animateBackground {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
+.calculator{
+    min-width: 30rem;
+    max-inline-size: 30rem;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15), 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+    margin: auto;
+    margin-block-start: 0rem;
+}
+
+.calculator_display{
+    background: linear-gradient(45deg,  rgb(157, 157, 172),  rgb(111, 150, 207));
+    background-size: 400% 400%;
+    animation: animateBackground 10s ease infinite;
+    text-align: end;
+    padding-block-start: 1rem;
+    padding-block-end: 1rem;
+    padding-inline-end: 1rem;
+    font-size: xx-large;
+    color: white;
+    font-family: "Nunito", "sans-serif";
+}
+
+.calculator_keys{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    background-color: rgb(157, 157, 172);
+    gap: 1px;
+}
+
+.dot,
+.calc_key_num{
+    background-color:  rgb(219, 219, 237);
+}
+
+.calc_key_del{
+    background-color: rgb(111, 150, 207);
+}
+
+.calc_key_enter{
+    background-color: rgb(187, 185, 191);
+    grid-column: 5;
+    grid-row: 5;
+    border: none;
+    cursor: pointer;
+    transition: all, 0.3 ease;
+    font-family: "Nunito", "sans-serif";
+    font-size: large;
+}
+
+.calc_key_reset{
+    grid-column: 6;
+    grid-row: 1;
+    border: none;
+    background-color: rgb(253, 123, 123);
+    cursor: pointer;
+    transition: all, 0.3 ease;
+    font-family: "Nunito", "sans-serif";
+    font-size: large;
+}
+
+
+.calc_key_minus, 
+.calc_key_del,
+.calc_key_op,
+.calc_key_quad,
+.calc_key_union,
+.calc_key_num{
+    border: none;
+    cursor: pointer;
+    transition: all, 0.3 ease;
+    font-family: "Nunito", "sans-serif";
+    font-size: large;
+}
+
+
+.calc_key_minus,
+.calc_key_del,
+.calc_key_reset,
+.calc_key_quad,
+.calc_key_union,
+.calc_key_enter,
+.calc_key_op,
+.calc_key_num{
+    padding-block-start: 1rem;
+    padding-block-end: 1rem;
+    padding-block-start: 1rem;
+    padding-inline-end: 1rem;
+}
+
+
+.calc_key_minus:hover,
+.calc_key_num:hover,
+.calc_key_op:hover,
+.calc_key_quad:hover,
+.calc_key_union:hover{
+    background: linear-gradient(45deg,  rgb(157, 157, 172),  rgb(111, 150, 207));
+    background-size: 400% 400%;
+    animation: animateBackground 10s ease infinite;
+}
+
+.calc_key_reset:hover{
+    background-color: rgb(249, 79, 79);
+}
+
+.calc_key_del:hover{
+    background-color: rgb(55, 112, 198);
+}
+
+.calc_key_enter:hover{
+    background-color: rgb(135, 133, 137);
+}
+
+.zero{
+  grid-column: 3;
+  grid-row: 5;
+}
+
+.one{
+    grid-column: 3;
+    grid-row: 4;
+}
+
+.four{
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.seven{
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.two{
+    grid-column: 4;
+    grid-row: 4;
+}
+.five{
+    grid-column: 4;
+    grid-row: 3;
+}
+
+.eight{
+    grid-column: 4;
+    grid-row: 2;
+}
+
+.three{
+    grid-column: 5;
+    grid-row: 4;
+}
+
+.six{
+    grid-column: 5;
+    grid-row: 3;
+}
+
+.nine{
+    grid-column: 5;
+    grid-row: 2;
+}
+
+.dot{
+    grid-column: 4;
+    grid-row: 5;
+}
+
+.diviser{
+    grid-column: 6;
+    grid-row: 2;
+}
+
+.multiplier{
+    grid-column: 6;
+    grid-row: 3;
+}
+
+.soustraire{
+    grid-column: 6;
+    grid-row: 4;
+}
+
+.addition{
+    grid-column: 6;
+    grid-row: 5;
+}

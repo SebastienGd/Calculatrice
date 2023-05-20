@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section>
+      <div class="textbox">
+        <div class="title">Guide d'utilisation</div>
+        <div class="text">
+          Un opérateur est nécessaire entre chaque terme<br />Racine: n√x; n√(x+z)<br />Nombres négatifs: le petit symbole -<br />Fonction
+          quadratique (x²): Appuyer sur x² pour le format et réappuyer sur x²
+          pour la réponse<br />La calculatrice est en degrés
+        </div>
+      </div>
+    </section>
+    <div class="calculator">
+      <div class="calculator_display">0</div>
+      <div class="calculator_keys">
+        <button class="calc_key_del">del</button>
+        <button class="calc_key_union">|</button>
+        <button class="calc_key_op">(</button>
+        <button class="calc_key_op">)</button>
+        <button class="calc_key_minus">-</button>
+        <button class="calc_key_op">ln</button>
+        <button class="calc_key_op">√</button>
+        <button class="calc_key_op">cos</button>
+        <button class="calc_key_op">^</button>
+        <button class="calc_key_op">sin</button>
+        <button class="calc_key_op">!</button>
+        <button class="calc_key_quad">x²</button>
+        <button class="calc_key_op">e</button>
+        <button class="calc_key_op dot">.</button>
+        <button class="calc_key_num nine">9</button>
+        <button class="calc_key_num eight">8</button>
+        <button class="calc_key_num seven">7</button>
+        <button class="calc_key_num six">6</button>
+        <button class="calc_key_num five">5</button>
+        <button class="calc_key_num four">4</button>
+        <button class="calc_key_num three">3</button>
+        <button class="calc_key_num two">2</button>
+        <button class="calc_key_num one">1</button>
+        <button class="calc_key_num zero">0</button>
+        <button class="calc_key_enter">=</button>
+        <button class="calc_key_reset">AC</button>
+        <button class="calc_key_op addition">+</button>
+        <button class="calc_key_op soustraire">−</button>
+        <button class="calc_key_op multiplier">x</button>
+        <button class="calc_key_op diviser">÷</button>
+      </div>
+    </div>
+    <script src="./script.js" ;></script>
+    <script src="keys.js" ;></script>
+  </body>
+</html>
